@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<title>Project Documentation</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="body">
+	<header class="head">
+		<h1>Web Services Project</h1>
+		<p>API Management, Submitted to - Jeevesh Awal</p>
+	</header>
+
+	<section class="page">
+		<section class="mainBox">
+				<div class="tile">
+					<div class="front">
+						<h2>Calculator API(JSON)</h2>
+					</div>
+					<div class="back">
+						<h3 id="heading"><a href="CalculatorJson_API.php" target="_blank">Calculator API(JSON)</a></h3>
+						<p>
+							This API is use for calculation of two numbers. It accepts 2 inputs and 1 mathematical operation from the user and it return result in a JSON format as shown below.
+                        </p>
+						<table class="table">
+                            <tr>
+                                <td>
+                                    Method :
+                                </td>
+                                <td>
+                                    GET
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Number 1 :  
+                                </td>
+                                <td>
+                                    Numeric Value(eg:90)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Number 2 :  
+                                </td>
+                                <td>
+                                    Numeric Value(eg:3)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Operator
+                                </td>
+                                <td>
+                                    Mathematical Operator(eg:POW)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Result:
+                                </td>
+                                <td>
+                                    {"Number 1":90,"Operation":"^","Number 2":3,"Result":729000}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Unsuccessful Result:
+                                </td>
+                                <td>
+                                    {"errorCode":101,"errorDescription":"Number 1 and Number 2 parameters are missing!!!."} 
+                                    <br/>OR<br/>
+                                    {"errorCode":102,"errorDescription":"To perform Factorial You have to enter value before operator."}
+                                </td>
+                            </tr>
+                        </table>					
+                    </div>		
+				</div>
+		    </section>
+
+		    <section class="mainBox">
+				<div class="tile">
+					<div class="front">
+						<h2>Calculator API(XML)</h2>
+					</div>
+					<div class="back">
+						<h3  id="heading"><a href="CalculatorXML_API.php" target="_blank">Calculator API(XML)</a></h3>
+						<p>
+							This API is use for calculation of two numbers. It accepts 2 inputs and 1 mathematical operation from the user and it return result in a XML format as shown below.
+						</p>
+						<table class="table ">
+                        <tr>
+                            <td>
+                                Method :
+                            </td>
+                            <td>
+                                GET
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Number 1 :  
+                            </td>
+                            <td>
+                                Numeric Value(eg: 101)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Number 2 :
+                            </td>
+                            <td>
+                                Numeric Value(eg: 3)
+                            </td>
+                        </tr>
+
+                         <tr>
+                            <td>
+                                Operator  
+                            </td>
+                            <td>
+                                Mathematical Operator(eg: MUL)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               Result:
+                            </td>
+                            <td>
+                                101 * 3 303
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>
+                               Unsuccessful Result:
+                            </td>
+                            <td>
+                                {"errorCode":101,"errorDescription":"Number 1 and Number 2 parameters are missing!!!."} 
+                                <br/>OR<br/>
+                                {"errorCode":102,"errorDescription":"To perform Factorial You have to enter value before operator."}
+                            </td>
+                        </tr>
+                      </table>	
+					</div>		
+				</div>
+		    </section>
+		    <section class="mainBox">
+				<div class="tile">
+					<div class="front">
+						<h2>Calculator.html</h2>
+					</div>
+					<div class="back">
+                        <h3  id="heading"><a href="calculator.html" target="_blank">Calculator.html</a></h3>
+                        <p>
+                            It is the main HTML page as a user interface where the whole operation will get executed. This page will cousume the calcutorJson_API.php.
+                            When user enter number 1, and click on any operator like +,-,* etc. then enter another number and when they click on = button the API will 
+                            be called and it will give the response JS and JS will use to print the result on HTML page.
+                        </p>
+                        <img src="image/calculator.png" alt="Calculator"/>
+					</div>		
+				</div>
+		    </section>
+	    </section>
+	    <footer class="footer">
+            <div>Team members:</div>
+            <section class="members">
+                <div>Aliasgar Gandhi(2122332)</div>
+                <div>Hiren Desai(2122296)</div>
+                <div>Gurjas Singh(2101324)</div>
+                <div>Navdeep Kaur(2024569)</div>
+            </section>
+	    </footer>
+</body>
+</html>

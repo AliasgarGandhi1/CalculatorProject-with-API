@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/calculator.css">
+    <script src="JS/index.js"></script>
+</head>
+<body>
+    <div class="Box">
+        <div class="Calculator">
+            <input type="text" placeholder="0" id="dispScreen">
+            <button onclick="Clear()">C</button>
+            <button id="clear" class="btn" type="button" value="!" name="FACT" onclick="display('!')">!</button>
+            <button id="modulation" class="btn" type="button" value="%" name="MOD" onclick="display('%')">%</button>
+            <button id="division" class="btn" type="button" value="/" name="DIV" onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button id="multiply" class="btn" type="button" value="*" name="MUL" onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button id="minus" class="btn" type="button" value="-" name="SUB" onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button id="add" class="btn" type="button" value="+" name="ADD" onclick="display('+')">+</button>
+            <button id="power" class="btn" type="button" value="^" name="POW" onclick="display('^')">^</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="callAPI()" class="equal">=</button>
+        </div>
+        <div class="container">
+            <h3 id="result"></h3>
+        </div>
+    </div>
+</body>
+</html>

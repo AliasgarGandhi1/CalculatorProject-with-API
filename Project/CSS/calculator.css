@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.Box
+{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.Calculator
+{
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #f4f4f4,
+                      12px 12px 12px rgba(0,0,0,.16);
+    display:grid;
+    grid-template-columns: repeat(4, 68px);                  
+}
+input
+{
+    grid-column: span 4;
+    height: 70px;
+    width: 260 px;
+    background-color: #f4f4f4;
+    box-shadow: inset -5px -5px 12px #f4f4f4,
+                inset  5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px;
+    color: rgba(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.container{
+    margin-top: 20px;
+    width: 425px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+button
+{
+    height: 48px;
+    width: 48px;
+    background-color: #f4f4f4; /* Signal WHite*/
+    border: thin solid silver;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+}
+button:hover
+{
+    height: 48px;
+    width: 48px;
+    background-color: #f4f4f4; /* Signal WHite*/
+    box-shadow: inset -5px -5px 12px #f4f4f4,
+                       10px 10px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    cursor: hand;
+    font-size: 16px;
+}
+
+.equal
+{
+    width: 115px;
+    border-radius: 40px;
+}
+
+.equal:hover
+{
+    width: 115px;
+    border-radius: 40px;
+    box-shadow: inset -5px -5px 12px #f4f4f4,
+    10px 10px 12px rgba(0,0,0,.16);
+}
+
+#dispScreen
+{
+    width: 95%;
+}
